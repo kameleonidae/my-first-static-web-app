@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <title>Inscription</title>
+</head>
+<body class="h-screen flex pb-14 bg-gradient-to-br from-blue-100 to-white">
+    <div id="container1" class="bg-white rounded-2xl shadow-xl border-2 border-gray-200 px-16 py-14 *:flex *:flex-col relative max-w-max m-auto transition-all duration-300 select-none">
+        
+        <h1 class="text-3xl font-bold text-blue-500">Inscription</h1>
+        <div class="gap-4 px-6 py-6">
+            <div>
+                
+                <label for="user"><p class="font-semibold text-gray-500">Identifiant</p></label>
+                <input type="text" id="user" placeholder="Identifiant" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white w-64">
+                
+            </div>
+            <div class="py-1"></div>
+            <div>
+                
+                <label for="psword"><p class="font-semibold text-gray-500">Mot de passe</p></label>
+                <div class="flex items-center gap-1">
+                    <input type="password" id="psword" placeholder="Mot de passe" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white w-64">
+                    <button id="btnView1" class="material-symbols-outlined text-blue-400 max-w-max">
+                        visibility
+                    </button>
+                </div>
+
+            </div>
+            <div>
+                
+                <label for="cpsword"><p class="font-semibold text-gray-500">Confirmation</p></label>
+                <div class="flex items-center gap-1">
+                    <input type="password" id="cpsword" placeholder="Mot de passe" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white w-64">
+                    <button id="btnView2" class="material-symbols-outlined text-blue-400 max-w-max">
+                        visibility
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-end py-2">
+            <button id="continueBtn1" class="flex flex-row gap-2 items-center bg-blue-400 px-6 py-1.5 text-white font-semibold rounded-full max-w-max hover:bg-blue-500 disabled:bg-blue-200" disabled=true>
+                Suivant
+                <lord-icon
+                    src="https://cdn.lordicon.com/vduvxizq.json"
+                    trigger="loop"
+                    colors="primary:#ffffff"
+                    class="w-0 h-8 transition-all"
+                    id="icon1">
+                </lord-icon>
+            </button>
+        </div>
+        <div class="pt-4">
+            <p>Déjà un compte ? <a id="rediBtn" class="max-w-max underline text-blue-500 hover:text-blue-400 hover:no-underline" href="../connexion/">Se connecter</a></p>
+        </div>
+        
+    </div>
+    <div id="container2" class="bg-white rounded-2xl shadow-xl border-2 border-gray-200 max-w-max px-16 py-14 *:flex m-auto transition-all duration-300 select-none translate-x-full opacity-0 hidden"> 
+        <h1 class="text-3xl font-bold text-blue-500">Informations</h1>
+        <div class="gap-4 px-6 py-6 flex-col">
+            <div class="flex flex-col">
+                <label for="name"><p class="font-semibold text-gray-500">Nom</p></label>
+                <input type="text" id="name" placeholder="NOM" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white w-64">
+            </div>
+            <div class="flex flex-col">
+                <label for="secndName"><p class="font-semibold text-gray-500">Prénom</p></label>
+                <input type="text" id="secndName" placeholder="Prénom" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white w-64">
+            </div>
+            <div></div>
+            <div class="flex flex-col">
+                <label for="dateNais"><p class="font-semibold text-gray-500">Date de naissance</p></label>
+                <input type="date" id="dateNais" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white w-64">
+            </div>
+        </div>
+        <div class="flex flex-row-reverse justify-between py-2">
+            <button id="continueBtn2" class="flex flex-row gap-2 items-center bg-blue-400 px-6 py-1.5 text-white font-semibold rounded-full max-w-max hover:bg-blue-500 disabled:bg-blue-200" disabled=true>
+                Suivant
+                <lord-icon
+                    src="https://cdn.lordicon.com/vduvxizq.json"
+                    trigger="loop"
+                    colors="primary:#ffffff"
+                    class="w-0 h-8 transition-all"
+                    id="icon2">
+                </lord-icon>
+            </button>
+            <button id="previousBtn0" class="bg-white border-2 border-blue-400 px-6 py-1.5 text-blue-400 font-semibold rounded-full max-w-max hover:bg-blue-50">Précédent</button>
+        </div>
+    </div>
+    <div id="container3" class="bg-white rounded-2xl shadow-xl border-2 border-gray-200 max-w-max px-16 py-14 *:flex m-auto transition-all duration-300 select-none translate-x-full opacity-0 hidden"> 
+        <h1 class="text-3xl font-bold text-blue-500">Adresse</h1>
+        <div class="gap-4 px-6 py-6 flex-col">
+            <div id="errAdress" class="border-2 rounded-md border-red-300 bg-red-200 px-4 py-1 transition-all duration-1000 overflow-hidden h-0 opacity-0 hidden">
+                <p class="text-red-500 font-medium">L'adresse saisie ne correspond à aucune adresse valide</p>
+                <button id="btnAdrValid" class="text-blue-500 underline font-medium hover:text-blue-400">Mon adresse est valide</button>
+            </div>
+            <div class="flex flex-row gap-5">
+                <div class="flex-col">
+                    <label for="numeroR"><p class="font-semibold text-gray-500">Numéro</p></label>
+
+                    <input type="text" id="numeroR" placeholder="N°" class="max-w-14 border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white">
+                </div>
+                <div class="flex-col">
+                    <label for="rue"><p class="font-semibold text-gray-500">Rue</p></label>
+
+                    <input type="text" id="rue" placeholder="Rue" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white max-w-72 w-72" list="listStreet">
+                    <datalist id="listStreet">
+                    </datalist>
+                </div>
+            </div>
+            <div class="flex flex-row gap-4">
+                <div class="flex-col">
+                    <label for="cdPostal"><p class="font-semibold text-gray-500">Code postal</p></label>
+
+                    <input type="text" id="cdPostal" placeholder="Code postal" class="max-w-28 border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white" list="listCdPostal">
+                    <datalist id="listCdPostal">
+                    </datalist>
+                </div>
+                <div class="flex-col">
+                    <label for="ville"><p class="font-semibold text-gray-500">Ville</p></label>
+
+                    <input type="text" id="ville" placeholder="Ville" class="border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 outline-none focus:border-blue-300 focus:bg-white max-w-48" list="listCity">
+                    <datalist id="listCity">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse justify-between py-2">
+            <button id="continueBtn3" class="flex flex-row gap-2 items-center bg-white border-2 border-blue-400 px-6 py-1.5 text-blue-400 font-semibold rounded-full max-w-max hover:bg-blue-50 disabled:hover:bg-white disabled:border-blue-200 disabled:text-blue-200" disabled>
+                Suivant
+                <lord-icon
+                    src="https://cdn.lordicon.com/vduvxizq.json"
+                    trigger="loop"
+                    colors="primary:#ffffff"
+                    class="w-0 h-8 transition-all"
+                    id="icon3">
+                </lord-icon>
+            </button>
+            <button id="previousBtn1" class="bg-white border-2 border-blue-400 px-6 py-1.5 text-blue-400 font-semibold rounded-full max-w-max hover:bg-blue-50">Précédent</button>
+        </div>
+    </div>
+    <div id="container4" class="bg-white rounded-2xl shadow-xl border-2 border-gray-200 max-w-max px-16 py-14 *:flex m-auto transition-all duration-300 select-none translate-x-full opacity-0 hidden"> 
+        <h1 class="text-3xl font-bold text-blue-500">Coordonnées</h1>
+        <div class="gap-4 px-6 py-6">
+            <form method="#" autocomplete="off">
+                <div class="flex-col">
+                    <label for="nT"><p class="font-semibold text-gray-500">Numéro téléphone</p></label>
+
+                    <div class="flex flex-row items-center gap-2">
+                        
+                        <img class="h-8" src="../style/img/franceFlag.png">
+                        <input type="input" id="nT" placeholder="06 11 22 33 44" maxlength="14" class="max-w-32 outline-none border-2 border-gray-300 rounded-lg py-1 px-2 bg-gray-50 focus:border-blue-300 focus:bg-white">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="flex flex-row-reverse gap-4 justify-between py-2">
+            <button id="continueBtn4" class="flex flex-row gap-2 items-center bg-blue-400 px-6 py-1.5 text-white font-semibold rounded-full max-w-max hover:bg-blue-500 disabled:bg-blue-200" disabled=true>
+                Suivant
+                <lord-icon
+                    src="https://cdn.lordicon.com/vduvxizq.json"
+                    trigger="loop"
+                    colors="primary:#ffffff"
+                    class="w-0 h-8 transition-all"
+                    id="icon4">
+                </lord-icon>
+            </button>
+            <button id="previousBtn2" class="bg-white border-2 border-blue-400 px-6 py-1.5 text-blue-400 font-semibold rounded-full max-w-max hover:bg-blue-50">Précédent</button>
+        </div>
+    </div>
+    <div id="container5" class="bg-white rounded-2xl shadow-xl border-2 border-gray-200 max-w-max px-16 py-14 *:flex m-auto transition-all duration-300 select-none translate-x-full opacity-0 hidden">
+        <h1 id="titleFinal" class="text-4xl font-bold text-blue-500 transition-colors">Finalisation</h1>
+        <div class="py-6 flex flex-col items-center">
+            <div id="titleMsg" class="overflow-hidden transition-all duration-500 h-0">
+                <h1 class="text-2xl font-bold"></h1>
+            </div>
+            <lord-icon
+                src="https://cdn.lordicon.com/gkryirhd.json"
+                trigger="loop"
+                colors="primary:#3b82f6"
+                state="loop-snake-alt"
+                id="icon5"
+                class="h-32 w-32 transition-all duration-300">
+            </lord-icon> 
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="../../controller/inscription/gstPage.js"></script>
+<script src="../../controller/inscription/verifTReel.js"></script>
+<script src="../../controller/inscription/gstTelInput.js"></script>
+<script src="../../controller/inscription/verifAfter.js"></script>
+<script src="../../controller/inscription/visibilityMdp.js"></script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <title>Ajout d'une annonce</title>
+</head>
+    <body class="h-screen flex bg-gradient-to-r from-cyan-200 to-cyan-100">
+        <div class="flex-col m-auto p-20">
+
+            <div>
+                <p class="font-semibold text-gray-500">Type : </p>
+                <input type="radio" id="materiel" name="type" value="materiel" checked />
+                <label for="materiel">Matériel</label>
+
+                <input type="radio" id="service" name="type" value="service" />
+                <label for="service">Service</label>
+            </div>
+
+
+
+            <div>
+                <label for="titre"><p class="font-semibold text-gray-500">Titre : </p></label>
+                <input type="text" id="user" placeholder="Titre de l'annonce" class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50">
+            </div>
+
+            <div>
+                <label for="desc"><p class="font-semibold text-gray-500">Description : </p></label>
+                <textarea class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50" placeholder="Description de l'annonce" id="description" name="description" rows="4" cols="50"></textarea>
+            </div>
+
+            <div id="estMateriel">
+
+                <div>
+                    <label for="marque"><p class="font-semibold text-gray-500">Marque : </p></label>
+                    <input type="text" id="marque" placeholder="Marque" class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50">
+                </div>
+
+                <div>
+                    <label for="modele"><p class="font-semibold text-gray-500">Modele : </p></label>
+                    <input type="text" id="modele" placeholder="Modele" class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50">
+                </div>
+
+                <div>
+                    <label for="Taille"><p class="font-semibold text-gray-500">Taille (en cm) : </p></label>
+                    <input type="number" id="taille" placeholder="Taille (en cm)" class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50">
+                </div>
+
+
+            </div>
+
+            <div>
+                <label class="font-semibold text-gray-500" for="fileInput">Ajouter des photos : </label><br>
+                <input type="file" id="fileInput" name="fileInput" accept="image/*" multiple onchange="displayImages()"><br>
+            </div>
+
+            <div id="imageContainer"></div>
+
+
+
+            <div>
+                <button class="bg-blue-400 px-4 py-1.5 text-white font-semibold rounded-full max-w-max hover:bg-blue-500" id="valider">Valider</button>
+            </div>
+        <div>
+
+
+    </body>
+</html>
+
+<script src="../../controller/ajout_annonce/affichage_images.js"></script>
+<script src="../../controller/ajout_annonce/ajout_materiel.js"></script>
+

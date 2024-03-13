@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./view/style/style.css">
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <title>Genti Voisin</title>
+</head>
+<body>
+    <div class="flex z-50 flex-row items-center  justify-between fixed top-0 left-0 right-0 px-6 py-2 shadow-md border-b-2 border-gray-200 bg-white">
+        <button id="menuBtn" class="flex items-center sm:hidden">
+            <lord-icon
+                src="https://cdn.lordicon.com/dwoxxgps.json"
+                trigger="click"
+                colors="primary:#000000"
+                class="w-12 h-12 rotate-180 transition-all duration-500">
+            </lord-icon>
+        </button>
+        <button class="flex flex-row *:text-4xl" ><h1 class="font-extrabold text-black">Genti</h1><h1 class="font font-extrabold text-blue-500">Voisins</h1></button>
+        <div class="block sm:hidden"></div>
+        <div class="hidden justify-end flex-row gap-2  sm:flex">
+            <button id="loginBtn" class="border-2 border-blue-500 bg-white text-blue-500 font-bold px-3 py-2 rounded-lg">Connexion</button>
+            <button id="logupBtn" class="border-2 bg-blue-500 text-white font-bold px-3 py-2 rounded-lg">Inscription</button>
+        </div>
+    </div>
+    <div id="menuContainer" class="absolute left-0 top-0 right-0 h-0 transition-all duration-500 bg-white shadow-md z-40 overflow-hidden flex justify-center items-center sm:hidden">
+        <div class="flex flex-col gap-10 *:scale-125">
+            <button id="loginBtn" class="border-2 border-blue-500 bg-white text-blue-500 font-bold px-8 py-2 rounded-lg">Connexion</button>
+            <button id="logupBtn" class="border-2 bg-blue-500 text-white font-bold px-8 py-2 rounded-lg">Inscription</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./controller/main/menu.js"></script>

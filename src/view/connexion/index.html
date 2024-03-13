@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Connexion</title>
+</head>
+<body class="h-screen flex pb-60 bg-gradient-to-r from-yellow-100 to-white">
+    <div class="bg-white rounded-2xl shadow-xl border-2 border-gray-200 max-w-max px-16 py-14 *:flex *:flex-col m-auto">
+        <h1 class="text-3xl font-bold text-amber-700">Connexion</h1>
+        <div class="gap-4 p-6">
+            <div>
+                <label for="user"><p class="font-semibold text-gray-500">Identifiant :</p></label>
+                <input type="text" id="user" placeholder="Identifiant" class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50">
+            </div>
+            <div></div>
+            <div>
+                <label for="psword"><p class="font-semibold text-gray-500">Mot de passe : </p></label>
+                <input type="password" id="psword" placeholder="Mot de passe" class="border-2 border-gray-300 rounded-lg p-1 bg-gray-50">
+            </div>
+            <p class="text-red-600 font-semibold text-lg" id="erreur"></p>
+        </div>
+        <div class="flex items-end">
+            <button class="bg-blue-400 px-4 py-1.5 text-white font-semibold rounded-full max-w-max hover:bg-blue-500" id="connexion">Connexion</button>
+        </div>
+        <div>
+            <p class="pt-5">Pas de compte ? <a href="../inscription/" class="text-blue-500 underline max-w-max hover:text-blue-400 hover:no-underline">S'inscrire</a></p>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="../../controller/connexion.js"></script>
+
